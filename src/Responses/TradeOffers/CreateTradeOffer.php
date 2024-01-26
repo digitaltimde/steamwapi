@@ -61,6 +61,8 @@ class CreateTradeOffer implements ResponseInterface
             // TODO
             return false;
         } else {
+            print_R($response);
+            exit;
             $returnData = $response;
 
             if ($this->detailed) {
