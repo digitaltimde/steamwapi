@@ -15,8 +15,13 @@ use SteamApi\Traits\UsefulMobileConfMethods;
 
 class SteamApi
 {
-    use InspectsMethods, SteamMethods, UsefulMethods, SteamAuthMethods, TradeOfferMethods, MobileConfirmationMethods,
-        UsefulMobileConfMethods;
+    use InspectsMethods;
+    use MobileConfirmationMethods;
+    use SteamAuthMethods;
+    use SteamMethods;
+    use TradeOfferMethods;
+    use UsefulMethods;
+    use UsefulMobileConfMethods;
 
     private $detailed = false;
 
